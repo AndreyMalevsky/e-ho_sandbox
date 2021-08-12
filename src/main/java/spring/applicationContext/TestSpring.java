@@ -8,7 +8,8 @@ public class TestSpring {
         //обращается к application context и помещает туда бины
         //файл обязательно должен лежать в папке resources (classpath java)
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-
+        TestBean testBean = applicationContext.getBean("testBean", TestBean.class);
+        System.out.println(testBean.getName());
 /*
         Стоит отметить, что сейсчас этот пример кажется слишком сложным, вручную создать объект было бы намного проще.
         Но когда приложение разрастается - это становится удобно.
