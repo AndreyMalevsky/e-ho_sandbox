@@ -4,8 +4,11 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 //        Client client1 = new Client(123, "Ваня");
+
+        Client client1 = new Client(455, "Андрей", "Малевский");
         Client client2 = new Client(456, "Саша", "Иванов");
         Client client3 = new Client(456, "Саша", "Кузнецов");
+
         System.out.println(client2.equals(client3));
         System.out.println(client2.hashCode());
         System.out.println(client3.hashCode());
