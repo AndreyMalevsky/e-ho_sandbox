@@ -12,5 +12,9 @@
         <constructor-arg value="Sasha"/>
         <constructor-arg value="Kuznetsov"/>
     </bean>
-
+    <bean id="testBeanOne"
+          class="spring.applicationContext.TestBean">
+        <constructor-arg value="Andrey"/>
+        <constructor-arg value="Malevsky"/>
+    </bean>
 </beans>
